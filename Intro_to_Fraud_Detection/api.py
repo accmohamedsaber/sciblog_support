@@ -8,6 +8,9 @@ from utils import (BASELINE_MODEL, BAD_REQUEST, STATUS_OK, NOT_FOUND,
                    TABLE_LOCATIONS)
 from utils import connect_to_database, select_random_row
 
+import sys 
+filePath = '/Users/mohamedsaber/Google Drive/PhD_papers/experiments/sciblog_support/Intro_to_Fraud_Detection/'
+sys.path.insert(0,filePath)
 
 app = Flask(__name__)  # app
 app.static_folder = 'static'  # define static folder for css, img, js
